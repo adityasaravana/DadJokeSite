@@ -1,0 +1,73 @@
+body{
+    background-color: #a8dadc;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home{
+    color: #E63946;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+}
+
+main{
+    margin-top: 5rem;
+}
+
+.gett-a{
+    color: #457B9D;
+    background-color: #F1FAEE;
+}
+
+.joke-panel{
+    background-color: #F1FAEE;
+    border-radius: 10px;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    font-weight: 500;
+}
+
+.joke-div{
+    color: #457B9D;
+    height: 12rem;
+    margin: 1rem 0;
+    border-bottom: 1px solid #656d72;
+}
+
+.buildup{
+    font-size: 1.3rem;
+}
+
+.punchline{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    transform-origin: center;
+    transform: rotate(-5deg);
+    color: #E63946;
+}
+
+.copy-button{
+    border: none;
+}
+
+.RocknRoll-font{
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.alert-message{
+    margin-bottom: 0;
+}
+
+.copy-container{
+    position: relative;
+}
+
+#copy-notif{
+    position: absolute;
+    width: 12rem;
+    transform: scale(0.8);
+    top: -3.5rem;
+    right: -3.2rem;
+}

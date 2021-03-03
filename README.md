@@ -9,4 +9,4 @@ Functionalities:-
 
 3. Copy 📋 - Button to copy displayed joke to clipboard.
 
-Github hosted app: [Random Dad Joke Generator](https://bhavyakanodia.github.io/Random-Dad-Joke/index.html/)
+Github hosted app: [Random Dad Joke Generator](https://bhavyakanodia.github.io/Random-Dad-Joke/)

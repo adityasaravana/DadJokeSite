@@ -116,4 +116,4 @@ copyButton.addEventListener('click', () => {
     copyIcon2.classList.remove('d-none');
     copyToClipboard(joke);
     copyMessage();
-})
+});

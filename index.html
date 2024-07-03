@@ -13,7 +13,7 @@
 
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -28,21 +28,29 @@
 <body>
     <!-- Navbar -->
     <nav id="nav" class="navbar">
-        <a href="dad.html" class="navbar-brand" id="home">Gett-A Dad Joke</a>
+        <!--<div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="sound" checked>
+            <label class="custom-control-label" for="sound">Sound</label>
+        </div>-->
+        <div class="icon-toggle">
+            <input type="checkbox" id="sound-toggle" />
+            <label for="sound-toggle" class="icon-label">
+                <i class="fas" id="sound-icon"></i>
+            </label>
+        </div>
     </nav>
 
-    <h1 class="text-center RocknRoll-font">Get a random Dad joke</h1>
-
-
+    <h1 class="text-center vintage-font" style="color: #F1FAEE;">Dad Jokes</h1>
 
     <main class="container">
-        <div class="d-flex flex-row justify-content-between">
+        <center>
+        
             <!-- Gett-A Button and Fetch Error Alert -->
             <button type="button" class="btn btn-lg gett-a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                     height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                     <path
                         d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                </svg> Gett-A <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                </svg> Let's hear it! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                     <path
                         d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
@@ -52,30 +60,24 @@
 
             </div>
         </div>
-
+        </center>
         <!-- Joke display -->
         <div class="joke-panel">
             <div class="joke-div">
                 <p class="buildup">
 
                 </p>
-                <p class="punchline RocknRoll-font">
+                <p class="punchline vintage-font">
 
                 </p>
             </div>
             <!-- Functionalities -->
             <div class="d-flex flex-row justify-content-around align-items-center">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="plain-text">
-                    <label class="custom-control-label" for="plain-text">Plain text</label>
-                </div>
+                
 
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="sound" checked>
-                    <label class="custom-control-label" for="sound">Sound</label>
-                </div>
+                
 
-                <div class="copy-container">
+                <!--<div class="copy-container">
                     <div class="alert alert-secondary text-center d-none" id="copy-notif" role="alert">
                         Copied to clipboard!
                     </div>
@@ -97,11 +99,24 @@
                                 d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
                         </svg>
                     </button>
+                </div>-->
+                <div class="copy-container">
+                    <div class="alert alert-secondary text-center d-none" id="copy-notif" role="alert">
+                        Copied to clipboard!
+                    </div>
+                    <button class="btn btn-outline-dark copy-button">
+                        <i class="fas fa-clipboard copy-icon1"></i>
+                        <i class="fas fa-clipboard-check copy-icon2 d-none"></i>
+                        Copy
+                    </button>
                 </div>
             </div>
         </div>
 
     </main>
+
+    <center><a href="dad.html" class="navbar-brand" id="home">Made by Aditya Saravana</a></center>
+   
 
 
     <!-- Bootstrap -->

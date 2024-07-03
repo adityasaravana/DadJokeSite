@@ -4,7 +4,7 @@ body{
 }
 
 #home{
-    color: #E63946;
+    color: #F1FAEE;
     font-family: 'Satisfy', cursive;
     font-size: 2rem;
 }
@@ -14,10 +14,12 @@ main{
 }
 
 .gett-a{
-    color: #457B9D;
+    color: #a8dadc;
     background-color: #F1FAEE;
 }
 
+/* #eeeddd* is a more cream-y background color, 
+but #F1FAEE seems to be easier to read. */
 .joke-panel{
     background-color: #F1FAEE;
     border-radius: 10px;
@@ -27,11 +29,36 @@ main{
     font-weight: 500;
 }
 
+.icon-toggle {
+    display: inline-block;
+}
+
+.icon-toggle input {
+    display: none;
+}
+
+.icon-toggle label {
+    cursor: pointer;
+    font-size: 24px;
+    color: #E63946;
+}
+
+.icon-toggle input:checked + .icon-label #sound-icon::before {
+    content: "\f6a9"; /* Speaker with slash icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.icon-toggle input:not(:checked) + .icon-label #sound-icon::before {
+    content: "\f028"; /* Speaker icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 .joke-div{
-    color: #457B9D;
+    color: #a8dadc;
     height: 12rem;
     margin: 1rem 0;
-    border-bottom: 1px solid #656d72;
+    border-bottom: 1px solid #a8dadc;
 }
 
 .buildup{
@@ -42,7 +69,7 @@ main{
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     transform-origin: center;
     transform: rotate(-5deg);
     color: #E63946;
@@ -50,6 +77,10 @@ main{
 
 .copy-button{
     border: none;
+}
+
+.vintage-font{
+    font-family: 'Satisfy', cursive;
 }
 
 .RocknRoll-font{
